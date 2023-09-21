@@ -22,6 +22,7 @@ public class TestRange extends TestCase {
 		assertTrue(r.contains(5));
 		assertFalse(r.contains(0));
 		assertFalse(r.contains(10));
+		assertTrue(r.contains(1));
 	}
 	
 	public void test01() {
@@ -33,6 +34,11 @@ public class TestRange extends TestCase {
 		assertEquals(0,r.size());
 		assertTrue(r.isEmpty());
 		r.clear();
+	}
+	
+	public void test02() {
+		Collection<Integer> r = new RangeCollection(2,5);
+		assertEquals(2, r.iterator().next().intValue());
 	}
 	
 	public void test50() {
