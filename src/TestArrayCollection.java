@@ -9,8 +9,8 @@ public class TestArrayCollection extends TestCollection<String> {
 
 	public void test90() {
 		ArrayCollection<Integer> ac = new ArrayCollection<>();
-		ac.add(42);
-		Integer result = ac.data[0];
+		ac.add(Integer.valueOf(42));
+		Integer result = ac.array[0];
 		System.out.println("a[0] = " + result);
 	}
 }
