@@ -18,7 +18,7 @@ public class Queue<E> {
 		// TODO
 	}
 
-	/** Return numerb of elements in queue */
+	/** Return number of elements in queue */
 	public int size() {
 		return -1; // TODO
 	}
@@ -43,7 +43,7 @@ public class Queue<E> {
 	}
 
 	/** Return front element of queue without removing it.
-         * @return froint element
+         * @return front element
 	 */
 	public E front() {
 		return null; // TODO
