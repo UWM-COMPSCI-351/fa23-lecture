@@ -1,6 +1,6 @@
 import java.util.Map;
 
-import edu.uwm.cs351.util.ArrayMap;
+import edu.uwm.cs351.ArrayMap;
 import junit.framework.TestCase;
 
 public class TestArrayMapEfficiency extends TestCase {

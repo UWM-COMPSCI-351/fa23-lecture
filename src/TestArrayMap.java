@@ -2,8 +2,8 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-import edu.uwm.cs351.util.ArrayMap;
-import edu.uwm.cs351.util.DefaultEntry;
+import edu.uwm.cs351.ArrayMap;
+import edu.uwm.cs351.DefaultEntry;
 import junit.framework.TestCase;
 
 public class TestArrayMap extends TestCase {
@@ -69,5 +69,13 @@ public class TestArrayMap extends TestCase {
 	public void test6() {
 		assertTrue(am.values().contains("snake"));
 		assertFalse(am.values().contains("ferret"));
+	}
+	
+	public void test7() {
+		assertNull(am.get(new Object()));
+	}
+	
+	public void test8() {
+		assertNull(am.get(null));
 	}
 }
